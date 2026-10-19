@@ -1,0 +1,5 @@
+# GitHub Pages (Jekyll) config for the public DailyFixer site (ADR-0015, Q-016).
+title: DailyFixer
+description: Free daily planner. Local-first, no ads, no tracking.
+theme: minima
+lang: en
