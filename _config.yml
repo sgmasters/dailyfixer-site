@@ -3,3 +3,15 @@ title: DailyFixer
 description: Free daily planner. Local-first, no ads, no tracking.
 theme: minima
 lang: en
+url: https://sgmasters.github.io
+baseurl: /dailyfixer-site
+
+# Top navigation, in this order.
+header_pages:
+  - download.md
+  - guide/index.md
+  - releases.md
+  - privacy.md
+
+# Public copies of the releases (the app repo is private): GitHub Releases of this repo.
+releases_repo: sgmasters/dailyfixer-site

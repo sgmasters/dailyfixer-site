@@ -62,10 +62,17 @@ Telegram reminders use **your own** Telegram bot. When a reminder is due, your d
 ## Optional: AI features
 AI is off by default.
 - **On-device** mode (for example Gemini Nano on Android, Ollama on your computer) does not send anything over the internet.
-- **Own key** mode sends only the text needed for the request (for example a goal's title and description, or a spoken command) to the provider you choose (Anthropic or OpenAI) using your own API key. That provider's privacy policy applies. The app never sends your whole task list.
+- **Own key** mode sends only the text needed for the request (for example a goal's title and description, a spoken command, a dictated text to tidy up, or notes you turn into a learning pack) to the provider you choose, using your own API key: Anthropic (Claude), OpenAI, Google (Gemini), xAI (Grok), DeepSeek or OpenCode (Zen); the last four since version 0.2.1. That provider's privacy policy applies. The app never sends your whole task list.
+- **Free tiers**: with a free Gemini key, Google may use your requests to improve its products, and people may review them. Some free OpenCode Zen models may also use requests for training. Don't use free tiers for private notes.
+- **Research mode** (Claude or OpenAI key only) sends the topic, level and number of lessons; the provider searches the web for it.
 
 ## Voice input
-On Android, iOS and macOS, voice input uses the operating system's speech recognition; depending on your device settings, the OS vendor (Google or Apple) may process the audio. On Windows and Linux, speech is recognized on your computer by the Whisper model; the model file is downloaded once from Hugging Face when you ask for it, and no audio leaves the computer. The microphone is used only while you are dictating.
+You choose the voice engine per device (Settings → Language & voice):
+- **System speech recognition** (default on Android, iOS and macOS): depending on your device settings, the OS vendor (Google or Apple) may process the audio.
+- **On-device Whisper** (default on Windows and Linux, also on Android): speech is recognized on the device; the model file is downloaded once from Hugging Face when you ask for it, and no audio leaves the device.
+- **Cloud transcription** (optional, your own OpenAI key): the recording is sent to OpenAI for transcription.
+
+The microphone is used only while you are dictating.
 
 ## Notifications
 Reminders are scheduled locally by the operating system. No push service of the developer is involved.
@@ -132,10 +139,17 @@ DailyFixer — бесплатный планировщик дня без рек�
 ## Необязательно: функции ИИ
 ИИ по умолчанию выключен.
 - Режим **на устройстве** (например, Gemini Nano на Android, Ollama на компьютере) ничего не отправляет в интернет.
-- Режим **собственного ключа** отправляет только текст, нужный для запроса (например, название и описание цели или голосовую команду), выбранному провайдеру (Anthropic или OpenAI) с ключом API пользователя. Применяется политика конфиденциальности этого провайдера. Весь список задач приложение никогда не отправляет.
+- Режим **собственного ключа** отправляет только текст, нужный для запроса (например, название и описание цели, голосовую команду, продиктованный текст для исправления или заметки для учебного курса), выбранному провайдеру с ключом API пользователя: Anthropic (Claude), OpenAI, Google (Gemini), xAI (Grok), DeepSeek или OpenCode (Zen); последние четыре — с версии 0.2.1. Применяется политика конфиденциальности этого провайдера. Весь список задач приложение никогда не отправляет.
+- **Бесплатные тарифы**: с бесплатным ключом Gemini Google может использовать запросы для улучшения своих продуктов и просматривать их вручную. Некоторые бесплатные модели OpenCode Zen тоже могут обучаться на запросах. Не используйте бесплатные тарифы для личных заметок.
+- **Режим исследования** (только ключ Claude или OpenAI) отправляет тему, уровень и число уроков; провайдер ищет материалы в интернете.
 
 ## Голосовой ввод
-На Android, iOS и macOS голосовой ввод использует распознавание речи операционной системы; в зависимости от настроек устройства звук может обрабатывать производитель ОС (Google или Apple). На Windows и Linux речь распознаётся на компьютере моделью Whisper; файл модели один раз загружается с Hugging Face по запросу пользователя, звук не покидает компьютер. Микрофон используется только во время диктовки.
+Способ распознавания выбирается для каждого устройства (Настройки → Язык и голос):
+- **Системное распознавание речи** (по умолчанию на Android, iOS и macOS): в зависимости от настроек устройства звук может обрабатывать производитель ОС (Google или Apple).
+- **Whisper на устройстве** (по умолчанию на Windows и Linux, также на Android): речь распознаётся на устройстве; файл модели один раз загружается с Hugging Face по запросу пользователя, звук не покидает устройство.
+- **Облачное распознавание** (по желанию, с собственным ключом OpenAI): запись отправляется в OpenAI для расшифровки.
+
+Микрофон используется только во время диктовки.
 
 ## Уведомления
 Напоминания планирует сама операционная система на устройстве. Push-сервисы разработчика не используются.
