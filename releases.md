@@ -9,7 +9,7 @@ New versions first. Downloads: [Download page]({{ '/download/' | relative_url }}
 
 ## 0.2.1 · 23 October 2026 {#v021}
 
-[Files for 0.2.1]({{ gh }}/v0.2.1)
+Downloads for 0.2.1 are coming soon; the [Download page]({{ '/download/' | relative_url }}) has the latest available version.
 
 **Added**
 - **More AI providers for your own key**: Gemini (Google), Grok (xAI), DeepSeek and OpenCode Zen, next to Claude and OpenAI (Settings → AI → Own key). Gemini has a free tier with a Google AI Studio key. Each provider keeps its own key on the device; **Get a key** opens the provider's key page. See [AI]({{ '/guide/ai/' | relative_url }}).

@@ -1,8 +1,12 @@
 # Newest first. Assets live on this repo's GitHub Releases (tag v<version>), copied from the
 # private app repo by its release workflow (docs/release/android.md in the app repo).
 # Add an entry per release; the Download and Releases pages read this file.
+# files: false = notes are out but the APKs are not on this repo's Releases yet; the
+# Download page then offers the newest release that has files. Remove the line once
+# the release exists here.
 - version: 0.2.1
   date: 2026-10-23
+  files: false
   summary: More AI providers for your own key (Gemini with a free tier, Grok, DeepSeek, OpenCode Zen) and a model choice per provider.
 - version: 0.2.0
   date: 2026-10-22

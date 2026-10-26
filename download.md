@@ -3,7 +3,8 @@ title: Download
 permalink: /download/
 ---
 
-{% assign r = site.data.releases.first %}
+{% assign newest = site.data.releases.first %}
+{% assign r = site.data.releases | where_exp: "x", "x.files != false" | first %}
 {% capture base %}https://github.com/{{ site.releases_repo }}/releases/download/v{{ r.version }}{% endcapture %}
 
 **DailyFixer {{ r.version }}** for Android · released {{ r.date | date: "%-d %B %Y" }} · [what's new]({{ '/releases/' | relative_url }}#v{{ r.version | replace: '.', '' }})
@@ -17,6 +18,9 @@ permalink: /download/
 | [SHA256SUMS.txt]({{ base }}/SHA256SUMS.txt) | Checksums of the files above |
 
 All versions: [GitHub Releases](https://github.com/{{ site.releases_repo }}/releases).
+{% if newest.version != r.version %}
+**DailyFixer {{ newest.version }}** ([what's new]({{ '/releases/' | relative_url }}#v{{ newest.version | replace: '.', '' }})) is released; its downloads will appear here soon.
+{% endif %}
 
 ## Install on Android
 1. Download the APK on your phone and open it.
