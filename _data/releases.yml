@@ -7,7 +7,6 @@
 # the release exists here.
 - version: 0.2.2
   date: 2026-10-28
-  files: false
   windows: true
   summary: Learning packs can be completed (with a few follow-up reviews), archived, deleted and restored; voice and typed commands for packs, screens and settings; Windows portable zip.
 - version: 0.2.1
