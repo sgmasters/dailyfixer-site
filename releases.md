@@ -7,9 +7,25 @@ New versions first. Downloads: [Download page]({{ '/download/' | relative_url }}
 
 {% capture gh %}https://github.com/{{ site.releases_repo }}/releases/tag{% endcapture %}
 
+## 0.2.2 · 28 October 2026 {#v022}
+
+First release with a **Windows** download (portable zip) next to the Android APKs. Includes everything from 0.2.1. [Files for 0.2.2]({{ gh }}/v0.2.2)
+
+**Added**
+- **Learning packs: complete, archive, delete, restore.** Each pack has a menu (⋮ on the Learn card and the pack screen):
+  - **Mark as completed**: open lessons are closed and the pack moves to a collapsed **Completed** section. Its cards come back 0–3 more times at widening gaps (a week, two weeks, four weeks; 2 by default), then stop.
+  - **Archive**: the pack moves to a collapsed **Archived** section; its open lessons and card reviews pause until *Restore from archive*.
+  - **Delete pack**: goes to Trash. With *Also delete related items* (on by default, with counts) its open lessons, goal missions and scheduled card reviews go too. Trash has a **Learning packs** section to restore or delete permanently.
+  - Every change has Undo. See [Goals & learning]({{ '/guide/goals-learning/' | relative_url }}#complete-archive-delete).
+- **Voice and typed commands** in quick add (English and Russian), confirmed with one tap and undoable: learning packs, deleting a task, opening a screen, and settings (theme, gamification, app language, keep quick add open, dictation). See [Quick add]({{ '/guide/quick-add/' | relative_url }}#commands).
+
+**Changed**
+- Database schema v6; upgrades in place, nothing to do.
+- Trash lists learning packs separately; lessons of an archived or deleted pack are kept when Trash is emptied.
+
 ## 0.2.1 · 23 October 2026 {#v021}
 
-Downloads for 0.2.1 are coming soon; the [Download page]({{ '/download/' | relative_url }}) has the latest available version.
+0.2.1 was not published as files; its changes ship in 0.2.2.
 
 **Added**
 - **More AI providers for your own key**: Gemini (Google), Grok (xAI), DeepSeek and OpenCode Zen, next to Claude and OpenAI (Settings → AI → Own key). Gemini has a free tier with a Google AI Studio key. Each provider keeps its own key on the device; **Get a key** opens the provider's key page. See [AI]({{ '/guide/ai/' | relative_url }}).

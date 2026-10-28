@@ -5,11 +5,11 @@ permalink: /guide/platforms/
 
 [← User guide]({{ '/guide/' | relative_url }})
 
-DailyFixer is one app for five platforms. **Android is available now**; the other builds are tested but not distributed yet.
+DailyFixer is one app for five platforms. **Android and Windows are available now** (Windows as a portable zip since 0.2.2); the other builds are tested but not distributed yet.
 
 | Feature | Android | iOS | Windows | Linux | macOS |
 |---|---|---|---|---|---|
-| Download | [APK]({{ '/download/' | relative_url }}) | later | later | later | later |
+| Download | [APK]({{ '/download/' | relative_url }}) | later | [zip]({{ '/download/' | relative_url }}#install-on-windows) | later | later |
 | Tasks, quick add, history | yes | yes | yes | yes | yes |
 | Scheduled reminders | yes | yes (next 60) | toasts; tray keeps the app running | while running (tray) | yes |
 | Urgent reminders | alarm sound; through Do Not Disturb with access | time-sensitive | urgent toast | critical | time-sensitive |

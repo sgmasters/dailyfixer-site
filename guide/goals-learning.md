@@ -26,6 +26,17 @@ Missions → **Learn** → **Import pack**: JSON, Markdown or CSV. A pack become
 - **XP**: reviews earn XP. There are no penalties.
 - **Export**: any pack exports back to JSON, Markdown or CSV.
 
+### Complete, archive, delete
+Each pack has a **⋮** menu (on its Learn card and on the pack screen):
+
+| Action | What happens | Way back |
+|---|---|---|
+| **Mark as completed** | Open lessons are closed and the pack moves to the collapsed **Completed** section. Choose how many follow-up reviews each card gets: none, 1, **2** or 3. They come back after a week, then two weeks, then four, and stop. | *Back to in progress* (menu or the note on the pack screen) |
+| **Archive** | The pack moves to the collapsed **Archived** section. Its open lessons leave Today and Tasks, and its cards are not reviewed. | *Restore from archive* |
+| **Delete pack** | The pack goes to Trash. With **Also delete related items** (on by default, with counts) its open lessons, goal missions and scheduled card reviews go too; without it, the goal and its lessons stay as a regular goal. Finished lessons are always kept. | Trash → *Learning packs* → Restore brings back everything deleted with it |
+
+Every action shows *Undo*. You can also say or type these in quick add: "complete pack Spanish", "archive Spanish", "restore Spanish from trash", "delete pack Spanish with everything" ([commands]({{ '/guide/quick-add/' | relative_url }}#commands)).
+
 ### Create with AI (Learn tab)
 - **From notes**: type, paste or dictate notes; AI turns them into lessons and quiz cards. A pasted pack is used as it is. Works with any AI engine.
 - **Research a topic**: topic, level and 3–12 lessons. Needs your own Claude or OpenAI key: the AI searches the web and keeps source links. You see a cost estimate before and the usage after.

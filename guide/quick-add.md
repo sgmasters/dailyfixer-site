@@ -39,7 +39,16 @@ Quick add also understands a few commands on existing tasks:
 
 Russian: выполни, перенеси … на пятницу, отложи … на 2 дня.
 
-A confirmation chip appears; **nothing changes until you tap it**, and *Undo* follows. If X doesn't match one of your tasks, the text simply becomes a new task.
+**App commands** (since 0.2.2), English and Russian:
+
+| Command | Examples |
+|---|---|
+| Learning packs | complete pack Spanish · archive Spanish · restore Spanish from archive / trash · reopen pack Spanish · delete pack Spanish (with everything) — заверши курс …, архивируй …, восстанови … из корзины, удали курс … со всем |
+| Delete a task | delete buy milk — удали задачу … |
+| Open a screen | open settings · go to trash · open goals · open learning · start review — открой настройки, перейди в корзину, повтори карточки |
+| Settings | dark mode · light theme · system theme · turn off gamification · gamification light · switch to Russian · keep quick add open · turn on dictation — включи тёмную тему, выключи геймификацию, переключись на английский, включи диктовку |
+
+A confirmation chip appears; **nothing changes until you tap it**, and *Undo* follows (opening a screen closes quick add). If X doesn't match one of your tasks or packs, the text simply becomes a new task.
 
 ## Voice
 Tap the mic in quick add. The transcript fills the same field, so the same rules apply. Tasks are never created automatically when you stop speaking.
