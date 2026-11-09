@@ -13,9 +13,28 @@ Four sections:
 - **Completed today**
 
 ## Tasks tab
-- Filters: All, No date, Upcoming, Overdue, P1.
-- Groups: Overdue, Today, Tomorrow, This week, Later, No date. Completed tasks can be shown or hidden.
-- **On a row**: tap to open; tick the checkbox or swipe right to complete; swipe left to delete. Both show *Undo*.
+- Filters: All, No date, Upcoming, Overdue, P1, and one chip per tag (List layout).
+- **On a row**: tap to open; tick the checkbox or swipe right to complete; swipe left to delete (or reschedule, in Settings). Both show *Undo*.
+- **Select several**: long-press a task (or ⋮ → Select), then tap others. The bar on top completes them, reschedules them, sets their priority, deletes them or makes a goal from them (⋮ has more) ([Make a goal]({{ '/guide/goals-learning/' | relative_url }}#make-a-goal-from-your-tasks)). The box in a section or column header selects all its tasks; tap it again to unselect them.
+- Rows show at most two tags, then "+N".
+
+### View: List or Board {#view-list-or-board}
+The tune icon opens **View**. Every choice is saved at once.
+
+| Setting | Choices |
+|---|---|
+| Layout | **List**: sections. **Board**: a column per tag, plus *No tag* |
+| Group by (List) | Date (Overdue, Today, Tomorrow, This week, Later, No date), Tag (a task with two tags shows under both), Priority, None |
+| Sort by | Due date, Priority, Manual (drag handles), Created, Title A–Z, Recently changed |
+| Then by | a second key for ties, or none |
+| Rows | Comfortable, or Compact (one line per task) |
+| Show completed | on / off |
+
+**Board**
+- Phones: each column fills the screen. Swipe left or right, or tap the column's tab (name and number of tasks) at the top.
+- Computers and tablets: columns side by side. Scroll sideways by dragging the board with the mouse, with its scrollbar, with Shift + mouse wheel, or with the wheel over a column header.
+- Drag a card by its handle (⠿) to another column to move it to that tag: it leaves the old column's tag and gets the new one. *Undo* puts it back. To reach a column that is off screen, hold the card at the edge of the board.
+- Rows don't swipe on the board; complete a task with its checkbox, delete or reschedule it from the task.
 
 ## Task details
 Changes save automatically. You can set:

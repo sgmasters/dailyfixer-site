@@ -18,6 +18,17 @@ The built-in planner uses your step lines, then any bullet points in the descrip
 
 **Describe your goal**: type or dictate up to 2000 characters, then tap *Fill in with AI*. It fills in the title, why, target date, sessions per week and steps for you to review. Without AI, a rule-based fill and the template are used.
 
+## Make a goal from your tasks {#make-a-goal-from-your-tasks}
+Turn a long unsorted list into one goal with milestones:
+1. In **Tasks**, long-press a task (or ⋮ → Select), select the ones that belong together (the box in a tag's header selects all of them), then tap **Make a goal** (tree icon). Or: Missions → **Goals** → **From my tasks**.
+2. The plan shows milestone headers and steps; a step belongs to the milestone above it. Drag to reorder. **Add tasks**, **Paste a list** (one per line) and **Add milestone** add more; a row's menu renames it or takes it out of the plan.
+3. Fill it in, or arrange it yourself:
+   - **Suggest groups**: groups tasks by shared tags, then shared words. No AI.
+   - **Organize with AI**: the AI groups the tasks, orders them, adds clearly missing steps and suggests dates. It uses your AI setting: on-device (Gemini Nano on Android, [Ollama]({{ '/guide/ai/' | relative_url }}#on-device-engines) on a computer) or your own key. Only the task titles are sent.
+   - **Copy AI prompt**: copies a ready prompt with your list for any AI chat (ChatGPT, Claude, Gemini …). Paste the chat's answer back with **Paste AI answer**.
+4. Options: **Give dates to tasks without one, until the target date** (tasks that have a date keep it), and **Reminders** on milestones, on every step or none, at a time you choose.
+5. **Create goal**. Your tasks move into the goal with their history, tags and sub-tasks; new steps are created. One **Undo** puts every task back and removes what was created.
+
 ## Learning packs
 Missions → **Learn** → **Import pack**: JSON, Markdown or CSV. A pack becomes a goal with one task per lesson, scheduled at its lessons per week.
 

@@ -7,6 +7,31 @@ New versions first. Downloads: [Download page]({{ '/download/' | relative_url }}
 
 {% capture gh %}https://github.com/{{ site.releases_repo }}/releases/tag{% endcapture %}
 
+## 0.3.0 · 10 November 2026 {#v030}
+
+Android APKs and the Windows zip. [Files for 0.3.0]({{ gh }}/v0.3.0)
+
+**Added**
+- **Make a goal from your tasks.** Select tasks (long-press in Tasks, or ⋮ → Select) → **Make a goal**, or Missions → Goals → **From my tasks**. Drag tasks into milestones, add more tasks or paste a list, and choose a target date and reminders (on milestones, every step or none). Tasks without a date get dates up to the target; tasks that have a date keep it. Fill the plan with:
+  - **Suggest groups**: shared tags and words, no AI;
+  - **Organize with AI**: on-device (Gemini Nano on Android, Ollama on your computer) or your own key; only the task titles are sent;
+  - **Copy AI prompt** for any AI chat, then **Paste AI answer**.
+
+  Your tasks are moved into the goal, not copied; one **Undo** puts everything back. See [Goals & learning]({{ '/guide/goals-learning/' | relative_url }}#make-a-goal-from-your-tasks).
+- **Tasks: List or Board.** The tune icon opens **View**:
+  - **List** (as before) groups by date, tag, priority or nothing;
+  - **Board** shows a column per tag (plus *No tag*). On phones each column fills the screen: swipe, or tap its tab. On a computer the columns sit side by side; drag the board with the mouse or use Shift + wheel. Drag a card by its handle to another column to move it to that tag.
+
+  See [Tasks]({{ '/guide/tasks/' | relative_url }}#view-list-or-board).
+- **More sorting**: due date, priority, manual, created, title A–Z, recently changed, plus a second sort key. **Compact rows** fit one task per line.
+- **Select a whole group**: a box in each section header (List) or column header (Board) selects all its tasks.
+
+**Changed**
+- Task rows show two tags and "+N" instead of a long line of tags.
+- After quick add, the message offers **Open** (the new task) instead of Undo; delete a wrong task from its screen.
+- Settings → AI → *What is sent* mentions the task titles you put into Make a goal.
+- On the Board, rows don't swipe (a sideways swipe moves between columns); complete tasks with their checkbox.
+
 ## 0.2.2 · 28 October 2026 {#v022}
 
 First release with a **Windows** download (portable zip) next to the Android APKs. Includes everything from 0.2.1. [Files for 0.2.2]({{ gh }}/v0.2.2)

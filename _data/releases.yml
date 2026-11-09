@@ -5,6 +5,10 @@
 # files: false = notes are out but the APKs are not on this repo's Releases yet; the
 # Download page then offers the newest release that has files. Remove the line once
 # the release exists here.
+- version: 0.3.0
+  date: 2026-11-10
+  windows: true
+  summary: Make a goal from your tasks (milestones, dates, reminders; rules, AI or any AI chat), Tasks Board with a column per tag, group by tag or priority, more sorting, compact rows, select a whole group; Open the task you just added.
 - version: 0.2.2
   date: 2026-10-28
   windows: true

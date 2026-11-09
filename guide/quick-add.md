@@ -11,7 +11,7 @@ One line of text or speech becomes a task. The parts it recognizes show as chips
 >
 > title **Call mom** · due **tomorrow 17:00** · priority **P2** · reminder **16:50** · estimate **15 min**
 
-Press Enter (or Send) to add the task; the sheet closes and shows *Added "…" · Undo*. To keep it open for the next task: Settings → Language & voice → *Keep quick add open for the next task*.
+Press Enter (or Send) to add the task; the sheet closes and shows *Added "…" · Open*; **Open** shows the new task, where you can edit or delete it. To keep it open for the next task: Settings → Language & voice → *Keep quick add open for the next task*.
 
 ## What it understands
 

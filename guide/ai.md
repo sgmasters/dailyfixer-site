@@ -17,7 +17,7 @@ AI is **optional and off by default**. Everything works without it: quick add, p
 
 ## On-device engines
 - **Gemini Nano** on supported Android phones (recent Pixel and Galaxy models, among others). Settings → AI shows whether your phone has it and offers **Download model**.
-- **Ollama** on Windows, Linux and macOS: install it from [ollama.com](https://ollama.com), pull a model (for example `ollama pull llama3.2`) and pick it in Settings → AI. DailyFixer talks to it only on your own computer.
+- **Ollama** on Windows, Linux and macOS: install it from [ollama.com](https://ollama.com), pull a model (for example `ollama pull llama3.2`; larger models such as `qwen2.5-coder:7b` organize long lists better) and pick it in Settings → AI. DailyFixer talks to it only on your own computer.
 
 ## Your own API key
 In **Own key** mode, pick a provider and paste your key. It is stored only in your device's secure storage: never synced, exported or logged. **Test key** sends one tiny request. Requests go straight from your device to the provider and are billed to your account; DailyFixer pays for nothing and sees nothing.
@@ -42,5 +42,6 @@ Only the text needed for the request, for example:
 - notes you turn into a learning pack
 - a dictated text to tidy up
 - for research: the topic, level and number of lessons
+- for **Make a goal**: the titles of the tasks you put into it (and the goal title and target date)
 
-Never your task list, history or other data. Anything that would change your tasks needs a tap to confirm first.
+Never your other tasks, history or other data. Anything that would change your tasks needs a tap to confirm first.
