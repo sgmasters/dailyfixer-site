@@ -7,6 +7,14 @@ New versions first. Downloads: [Download page]({{ '/download/' | relative_url }}
 
 {% capture gh %}https://github.com/{{ site.releases_repo }}/releases/tag{% endcapture %}
 
+## 0.3.2 · 10 November 2026 {#v032}
+
+Android APKs and the Windows zip. [Files for 0.3.2]({{ gh }}/v0.3.2)
+
+**Fixed**
+- **Windows: Update and restart** closed DailyFixer without installing the update (0.3.1). The app now replaces its files and opens again.
+- If you use 0.3.1 on **Windows**, install 0.3.2 once from the [Download page]({{ '/download/' | relative_url }}) (unzip over the old folder). Later updates work from inside the app. On Android, 0.3.1 updates itself normally.
+
 ## 0.3.1 · 10 November 2026 {#v031}
 
 Android APKs and the Windows zip. [Files for 0.3.1]({{ gh }}/v0.3.1)

@@ -5,6 +5,10 @@
 # files: false = notes are out but the APKs are not on this repo's Releases yet; the
 # Download page then offers the newest release that has files. Remove the line once
 # the release exists here.
+- version: 0.3.2
+  date: 2026-11-10
+  windows: true
+  summary: Fix for Windows in-app updates (Update and restart closed the app without updating in 0.3.1).
 - version: 0.3.1
   date: 2026-11-10
   windows: true
