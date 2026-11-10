@@ -21,6 +21,7 @@ How to use DailyFixer {{ site.data.releases.first.version }}. New here? Watch th
 | [Missions, XP & streaks]({{ '/guide/gamification/' | relative_url }}) | How XP, levels, streaks and missions work |
 | [Calendars & sync]({{ '/guide/calendars-sync/' | relative_url }}) | Calendar sources, encrypted sync between devices |
 | [AI]({{ '/guide/ai/' | relative_url }}) | AI modes, on-device engines, your own API key, what is sent |
+| [Your own AI server]({{ '/guide/own-server/' | relative_url }}) | Ollama or LM Studio on your PC, used from your phone over Tailscale; which models to pick |
 | [Import & export]({{ '/guide/import-export/' | relative_url }}) | Backups, task lists, Microsoft To Do |
 | [Updates]({{ '/guide/updates/' | relative_url }}) | New versions from inside the app: check, download, install, skip |
 | [Platforms]({{ '/guide/platforms/' | relative_url }}) | What works on Android, iOS, Windows, Linux and macOS |

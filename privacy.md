@@ -66,6 +66,7 @@ AI is off by default.
 - **Own key** mode sends only the text needed for the request (for example a goal's title and description, a spoken command, a dictated text to tidy up, or notes you turn into a learning pack) to the provider you choose, using your own API key: Anthropic (Claude), OpenAI, Google (Gemini), xAI (Grok), DeepSeek or OpenCode (Zen); the last four since version 0.2.1. That provider's privacy policy applies. The app never sends your whole task list.
 - **Free tiers**: with a free Gemini key, Google may use your requests to improve its products, and people may review them. Some free OpenCode Zen models may also use requests for training. Don't use free tiers for private notes.
 - **Research mode** (Claude or OpenAI key only) sends the topic, level and number of lessons; the provider searches the web for it.
+- **My server** mode (version 0.4) sends the same request text only to the server address you enter, for example Ollama or LM Studio on your own computer, reached over your home network or Tailscale. Nobody else receives it, and DailyFixer never falls back to a cloud provider in this mode. An optional server API key stays in your device's secure storage. Tailscale's own privacy policy applies to its network; the requests travel encrypted between your devices.
 
 ## Voice input
 You choose the voice engine per device (Settings → Language & voice):
@@ -147,6 +148,7 @@ DailyFixer — бесплатный планировщик дня без рек�
 - Режим **собственного ключа** отправляет только текст, нужный для запроса (например, название и описание цели, голосовую команду, продиктованный текст для исправления или заметки для учебного курса), выбранному провайдеру с ключом API пользователя: Anthropic (Claude), OpenAI, Google (Gemini), xAI (Grok), DeepSeek или OpenCode (Zen); последние четыре — с версии 0.2.1. Применяется политика конфиденциальности этого провайдера. Весь список задач приложение никогда не отправляет.
 - **Бесплатные тарифы**: с бесплатным ключом Gemini Google может использовать запросы для улучшения своих продуктов и просматривать их вручную. Некоторые бесплатные модели OpenCode Zen тоже могут обучаться на запросах. Не используйте бесплатные тарифы для личных заметок.
 - **Режим исследования** (только ключ Claude или OpenAI) отправляет тему, уровень и число уроков; провайдер ищет материалы в интернете.
+- Режим **«Мой сервер»** (версия 0.4) отправляет тот же текст запроса только по адресу сервера, который вы ввели, например Ollama или LM Studio на вашем компьютере, доступном через домашнюю сеть или Tailscale. Больше никто его не получает, и в этом режиме DailyFixer никогда не переключается на облачного провайдера. Необязательный ключ API сервера хранится в защищённом хранилище устройства. К сети Tailscale применяется её собственная политика конфиденциальности; между вашими устройствами запросы идут в зашифрованном виде.
 
 ## Голосовой ввод
 Способ распознавания выбирается для каждого устройства (Настройки → Язык и голос):

@@ -13,11 +13,15 @@ AI is **optional and off by default**. Everything works without it: quick add, p
 |---|---|---|
 | **Off** (default) | built-in rules | never |
 | **On-device** | the AI on your device (below), else rules | never |
+| **My server** (0.4) | your own Ollama / LM Studio server, then on-device, else rules | only to your server's address |
 | **Own key** | on-device first, then your own API key, else rules | only to the provider you chose |
 
 ## On-device engines
 - **Gemini Nano** on supported Android phones (recent Pixel and Galaxy models, among others). Settings → AI shows whether your phone has it and offers **Download model**.
 - **Ollama** on Windows, Linux and macOS: install it from [ollama.com](https://ollama.com), pull a model (for example `ollama pull llama3.2`; larger models such as `qwen2.5-coder:7b` organize long lists better) and pick it in Settings → AI. DailyFixer talks to it only on your own computer.
+
+## Your own server (My server)
+Run Ollama or LM Studio on your PC once and use it from your phone and other computers too: **Settings → AI → My server**, enter the address, pick a model, **Test**. Free, private (only your devices), no API bill. Step-by-step set-up with Tailscale, model advice and troubleshooting: **[Your own AI server]({{ '/guide/own-server/' | relative_url }})**.
 
 ## Your own API key
 In **Own key** mode, pick a provider and paste your key. It is stored only in your device's secure storage: never synced, exported or logged. **Test key** sends one tiny request. Requests go straight from your device to the provider and are billed to your account; DailyFixer pays for nothing and sees nothing.
