@@ -1,0 +1,28 @@
+---
+layout: null
+permalink: /update.json
+sitemap: false
+---
+{%- assign r = site.data.releases | where_exp: "x", "x.files != false" | first -%}
+{%- capture base -%}https://github.com/{{ site.releases_repo }}/releases/download/v{{ r.version }}{%- endcapture -%}
+{
+  "format": "dailyfixer.update",
+  "version": 1,
+  "latest": {
+    "version": {{ r.version | jsonify }},
+    "date": {{ r.date | date: "%Y-%m-%d" | jsonify }},
+    "summary": {{ r.summary | jsonify }},
+    "notes": "{{ site.url }}{{ site.baseurl }}/releases/#v{{ r.version | replace: '.', '' }}",
+    "download": "{{ site.url }}{{ site.baseurl }}/download/",
+    "sums": "{{ base }}/SHA256SUMS.txt",
+    "files": {
+      {%- if r.windows %}
+      "windows-x64": "{{ base }}/DailyFixer-{{ r.version }}-windows-x64.zip",
+      {%- endif %}
+      "android-arm64-v8a": "{{ base }}/dailyfixer-{{ r.version }}-arm64-v8a.apk",
+      "android-armeabi-v7a": "{{ base }}/dailyfixer-{{ r.version }}-armeabi-v7a.apk",
+      "android-x86_64": "{{ base }}/dailyfixer-{{ r.version }}-x86_64.apk",
+      "android-universal": "{{ base }}/dailyfixer-{{ r.version }}-universal.apk"
+    }
+  }
+}
