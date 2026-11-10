@@ -22,6 +22,7 @@ How to use DailyFixer {{ site.data.releases.first.version }}. New here? Watch th
 | [Calendars & sync]({{ '/guide/calendars-sync/' | relative_url }}) | Calendar sources, encrypted sync between devices |
 | [AI]({{ '/guide/ai/' | relative_url }}) | AI modes, on-device engines, your own API key, what is sent |
 | [Import & export]({{ '/guide/import-export/' | relative_url }}) | Backups, task lists, Microsoft To Do |
+| [Updates]({{ '/guide/updates/' | relative_url }}) | New versions from inside the app: check, download, install, skip |
 | [Platforms]({{ '/guide/platforms/' | relative_url }}) | What works on Android, iOS, Windows, Linux and macOS |
 
 Questions about your data: [Privacy policy]({{ '/privacy' | relative_url }}).

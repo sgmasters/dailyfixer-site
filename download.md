@@ -28,7 +28,7 @@ All versions: [GitHub Releases](https://github.com/{{ site.releases_repo }}/rele
 2. When Android asks, allow **Install unknown apps** for your browser or file manager. DailyFixer is not on Google Play yet, so Play Protect may show a warning; the APK is signed by the developer.
 3. Open DailyFixer. It works offline right away; no account is needed.
 
-**Updating:** from 0.3.1 on, DailyFixer offers new versions itself (Settings → About → Updates). Or install the newer APK over the installed one. Your data stays. All APKs on this page carry the same signature, so updates install in place.
+**Updating:** from 0.3.1 on, DailyFixer offers new versions itself (Settings → About → Updates, see [Updates]({{ '/guide/updates/' | relative_url }})). Or install the newer APK over the installed one. Your data stays. All APKs on this page carry the same signature, so updates install in place.
 
 **Check the download (optional):** on a computer, put the APK next to `SHA256SUMS.txt` and run `sha256sum -c SHA256SUMS.txt --ignore-missing`.
 

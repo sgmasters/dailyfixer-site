@@ -19,5 +19,6 @@ DailyFixer is one app for five platforms. **Android and Windows are available no
 | Calendars | device, Google, iCloud, Outlook | device, Google, iCloud, Outlook | Google, iCloud, Outlook | Google, iCloud, Outlook | Google, iCloud, Outlook |
 | Encrypted sync | Google Drive | Google Drive | Drive or a folder | Drive or a folder | Drive or a folder |
 | Tray and start with the system | — | — | yes | yes | — |
+| [Updates]({{ '/guide/updates/' | relative_url }}) (0.3.1+) | download and install | — | download, install, restart | notice + download page | notice + download page |
 
 Secrets are kept in each system's secure storage: Android Keystore, Apple Keychain, Windows Credential Manager or the Linux Secret Service.
