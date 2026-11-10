@@ -23,6 +23,7 @@ DailyFixer is a free daily planner without ads. It is built so that your data st
 - **No ads, no analytics, no tracking, no crash-reporting services.**
 - Cloud sync is optional. When you turn it on, files go to **your own** Google Drive app folder and are **end-to-end encrypted** with your passphrase before they leave the device.
 - Telegram, AI and Microsoft features are **off until you turn them on**, and then send only the text they need.
+- The **update check** asks this site once a day which version is the latest; it sends nothing about you (details below).
 
 ## Data stored on your device
 Tasks, sub-tasks, notes, tags, goals, missions and progress, learning packs, reminders, settings and the change history (audit log) are kept in a local database on your device. The app works fully offline and without an account.
@@ -77,6 +78,9 @@ The microphone is used only while you are dictating.
 ## Notifications
 Reminders are scheduled locally by the operating system. No push service of the developer is involved.
 
+## Update check {#update-check}
+On Android, Windows, macOS and Linux the app asks this website (hosted on GitHub Pages) at most once a day which version is the latest, and downloads an update from GitHub Releases only when you tap *Download and install*. These are plain requests: no account, device id, app data or installed version is sent. GitHub receives your IP address and the time, as for any visit ([GitHub privacy statement](https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement)). Turn it off in Settings → About → Updates → *Check for updates automatically*.
+
 ## Children
 DailyFixer is not directed at children under 13 and does not knowingly collect any personal data.
 
@@ -100,6 +104,7 @@ DailyFixer — бесплатный планировщик дня без рек�
 - **Нет рекламы, аналитики, отслеживания и сервисов отчётов о сбоях.**
 - Облачная синхронизация необязательна. Если её включить, файлы попадают в **собственную** папку приложения на Google Диске пользователя и **шифруются сквозным шифрованием** паролем пользователя ещё на устройстве.
 - Telegram, ИИ и Microsoft **выключены, пока их не включить**, и отправляют только нужный текст.
+- **Проверка обновлений** раз в день спрашивает у этого сайта номер последней версии и ничего не сообщает о пользователе (подробнее ниже).
 
 ## Данные на устройстве
 Задачи, подзадачи, заметки, теги, цели, миссии и прогресс, учебные курсы, напоминания, настройки и история изменений (журнал аудита) хранятся в локальной базе данных на устройстве. Приложение полностью работает без интернета и без учётной записи.
@@ -153,6 +158,9 @@ DailyFixer — бесплатный планировщик дня без рек�
 
 ## Уведомления
 Напоминания планирует сама операционная система на устройстве. Push-сервисы разработчика не используются.
+
+## Проверка обновлений
+На Android, Windows, macOS и Linux приложение не чаще раза в день спрашивает у этого сайта (GitHub Pages) номер последней версии и скачивает обновление с GitHub Releases, только когда нажата кнопка «Скачать и установить». Это обычные запросы: учётная запись, идентификатор устройства, данные приложения и установленная версия не передаются. GitHub получает IP-адрес и время, как при любом посещении сайта. Отключить: Настройки → О приложении → Обновления → «Проверять обновления автоматически».
 
 ## Дети
 DailyFixer не предназначен для детей младше 13 лет и намеренно не собирает персональные данные.

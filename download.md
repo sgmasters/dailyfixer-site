@@ -28,7 +28,7 @@ All versions: [GitHub Releases](https://github.com/{{ site.releases_repo }}/rele
 2. When Android asks, allow **Install unknown apps** for your browser or file manager. DailyFixer is not on Google Play yet, so Play Protect may show a warning; the APK is signed by the developer.
 3. Open DailyFixer. It works offline right away; no account is needed.
 
-**Updating:** install the newer APK over the installed one. Your data stays. All APKs on this page carry the same signature, so updates install in place.
+**Updating:** from 0.3.1 on, DailyFixer offers new versions itself (Settings → About → Updates). Or install the newer APK over the installed one. Your data stays. All APKs on this page carry the same signature, so updates install in place.
 
 **Check the download (optional):** on a computer, put the APK next to `SHA256SUMS.txt` and run `sha256sum -c SHA256SUMS.txt --ignore-missing`.
 
@@ -38,7 +38,7 @@ All versions: [GitHub Releases](https://github.com/{{ site.releases_repo }}/rele
 2. Run `dailyfixer.exe`. The build is not code-signed yet, so Windows SmartScreen may say *Windows protected your PC*: choose **More info** → **Run anyway**.
 3. Optional: Settings → Desktop → tray icon and *Start with Windows*.
 
-**Updating:** quit DailyFixer (also from the tray), unzip the new version over the old folder or into a new one. Your data is kept in `%APPDATA%\app.dailyfixer\DailyFixer`, not in the app folder. **Removing:** switch off *Start with Windows*, then delete the folder.
+**Updating:** from 0.3.1 on, Settings → About → Updates → *Download and install* does it for you. By hand: quit DailyFixer (also from the tray), unzip the new version over the old folder or into a new one. Your data is kept in `%APPDATA%\app.dailyfixer\DailyFixer`, not in the app folder. **Removing:** switch off *Start with Windows*, then delete the folder.
 {% endif %}
 ## Good to know
 - **Google sign-in** (Drive sync, Google Calendar) is in Google's testing mode until the app is verified: only invited testers can sign in for now. Everything else works without it.

@@ -31,3 +31,13 @@ All off until you turn them on in Settings:
 - **AI**: on-device or your own key → [AI]({{ '/guide/ai/' | relative_url }})
 
 Every change you make is kept in **Settings → Audit log** (and per task in Task → History), so you can see what changed and when.
+
+## Updates {#updates}
+From version 0.3.1, DailyFixer checks this site once a day for a new version (Android, Windows, macOS, Linux) and shows *DailyFixer X is available · View*. In Settings → About → **Updates**:
+- **Check now**, and *What's new* for the release notes.
+- **Download and install**: the file is checked (SHA-256) first. Android opens its installer; the first time it asks you to allow installs from DailyFixer. Windows closes the app, replaces its files and starts it again. macOS and Linux open the download page.
+- **Skip this version** stops the message for that version.
+- **Check for updates automatically** turns the daily check off.
+
+Your tasks and settings stay as they are.
+

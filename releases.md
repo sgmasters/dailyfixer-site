@@ -7,6 +7,19 @@ New versions first. Downloads: [Download page]({{ '/download/' | relative_url }}
 
 {% capture gh %}https://github.com/{{ site.releases_repo }}/releases/tag{% endcapture %}
 
+## 0.3.1 · 10 November 2026 {#v031}
+
+Android APKs and the Windows zip. [Files for 0.3.1]({{ gh }}/v0.3.1)
+
+**Added**
+- **Updates inside the app** (Android and Windows). Once a day at start DailyFixer asks this site whether a newer version exists and offers it with one message. Settings → About → **Updates** has *Check now*, *What's new*, **Download and install** and *Skip this version*. Every download is checked against the release's SHA-256 before it is used.
+  - **Android** opens the system installer; the first time, allow DailyFixer to install apps (*Install unknown apps*). Updates install in place; your data stays.
+  - **Windows**: DailyFixer closes, replaces its program files and starts again. Your data (in `%APPDATA%`) stays. If the app folder can't be changed (for example under Program Files), the downloaded zip is shown instead.
+  - **macOS and Linux** get a link to the download page.
+- The automatic check can be turned off. It sends no data about you; see [Privacy]({{ '/privacy' | relative_url }}#update-check).
+
+From 0.3.1 on, you won't need this page to update. To get 0.3.1 itself, install it from the [Download page]({{ '/download/' | relative_url }}) once.
+
 ## 0.3.0 · 10 November 2026 {#v030}
 
 Android APKs and the Windows zip. [Files for 0.3.0]({{ gh }}/v0.3.0)
