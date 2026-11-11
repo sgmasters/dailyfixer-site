@@ -16,7 +16,7 @@ curl -fsSL https://sgmasters.github.io/dailyfixer-site/install.sh | bash
 
 DailyFixer goes into the *Applications* folder of your home folder (no administrator password) and opens without any security warning.
 
-**Update:** DailyFixer tells you when a new version is out (Settings → About → **Updates**). Run the same line in Terminal again — the Updates screen has a **Copy command** button for it (from 0.4). Your tasks and settings stay.
+**Update:** DailyFixer tells you when a new version is out (Settings → About → **Updates**). Tap **Download and install**: the new version is downloaded, its signature checked, and it is installed when you quit DailyFixer (builds from 0.4 on). Older builds: run the same line in Terminal again. Your tasks and settings stay either way.
 
 **Can't use Terminal?** Download [DailyFixer {{ a.version }} for Mac (DMG)]({{ a.mac_dmg }}), open it and drag DailyFixer to *Applications*. The first time, macOS says it can't check the app: open **System Settings → Privacy & Security**, scroll down and click **Open Anyway** next to DailyFixer. For updates, download the new DMG the same way (or use the Terminal line).
 
@@ -47,9 +47,9 @@ Apps from outside the App Store are installed with **SideStore** (free). SideSto
 
 ## What's different on Mac and iPhone
 
-- **Google sign-in** (Drive sync, Google Calendar) isn't in these builds yet. Everything else works offline; iCloud and Outlook calendars, Telegram and AI with your own key work.
+- **Google sign-in** (Drive sync, Google Calendar) works. Signed in before on another device? Use the same Google account and **Sync now**.
 - **Urgent reminders** arrive as normal reminders: alarm-style alerts need a paid Apple developer account.
 - **iPhone:** reminders are scheduled on the phone (the next 60); Telegram reminders go out while the app is open.
 - Full list: [Platforms]({{ '/guide/platforms/' | relative_url }}).
 
-Checksums: [SHA256SUMS.txt]({{ a.mac_zip | split: '/DailyFixer-' | first }}/SHA256SUMS.txt)
+Checksums: [SHA256SUMS-apple.txt]({{ a.sums }})
