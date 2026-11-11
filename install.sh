@@ -48,7 +48,9 @@ mkdir -p "$DEST"
 rm -rf "$APP"
 mv "${tmp}/x/DailyFixer.app" "$APP"
 echo "Installed DailyFixer ${version} in ${DEST}. To update later, run the same command again."
-if [ -d /Applications/DailyFixer.app ]; then
-  echo "Note: there is another DailyFixer in /Applications (an older build). Remove it so only this one opens."
+if [ -e /Applications/DailyFixer.app/WrappedBundle ]; then
+  echo "Note: /Applications/DailyFixer.app is the iPhone version run on this Mac from Xcode. Move it to the Trash if you don't need it."
+elif [ -d /Applications/DailyFixer.app ]; then
+  echo "Note: there is another DailyFixer in /Applications. Move it to the Trash so only this one opens."
 fi
 [ -n "${DAILYFIXER_NO_OPEN:-}" ] || open "$APP"

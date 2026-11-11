@@ -18,6 +18,15 @@
       "category": "productivity",
       "versions": [
         {
+          "version": "0.4.0",
+          "buildVersion": "9",
+          "date": "2026-11-11",
+          "localizedDescription": "DailyFixer 0.4.0 for Mac and iPhone. Release notes: https://sgmasters.github.io/dailyfixer-site/releases/",
+          "downloadURL": "https://github.com/sgmasters/dailyfixer-site/releases/download/v0.4.0/DailyFixer-0.4.0.ipa",
+          "size": 12417558,
+          "minOSVersion": "15.0"
+        },
+        {
           "version": "0.3.2",
           "buildVersion": "7",
           "date": "2026-11-11",
