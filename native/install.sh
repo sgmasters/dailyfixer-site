@@ -4,6 +4,8 @@
 # Finds the current version in the update feed (the same appcast Sparkle reads), so
 # installs and in-app updates always agree. Files downloaded with curl aren't
 # quarantined, so the app opens without a Gatekeeper prompt.
+# Messages stay ASCII and variables use ${braces}: macOS bash 3.2 in a UTF-8 locale reads a
+# non-ASCII byte after $name as part of the name (set -u then fails).
 set -euo pipefail
 FEED="${DAILYFIXER_FEED:-https://sgmasters.github.io/dailyfixer-site/native/appcast.xml}"
 DEST="${DAILYFIXER_DEST:-$HOME/Applications}"
@@ -26,19 +28,19 @@ if [ -d "$APP" ]; then
 fi
 
 tmp=$(mktemp -d); trap 'rm -rf "$tmp"' EXIT
-echo "Downloading DailyFixer $version…"
+echo "Downloading DailyFixer ${version}..."
 curl -fL --progress-bar "$url" -o "$tmp/DailyFixer.zip" || fail "download failed."
 [ -z "$length" ] || [ "$(stat -f%z "$tmp/DailyFixer.zip")" = "$length" ] || fail "download is incomplete."
 ditto -x -k "$tmp/DailyFixer.zip" "$tmp/x"
 [ -d "$tmp/x/DailyFixer.app" ] || fail "the download has no DailyFixer.app."
 
 if pgrep -f "$APP/Contents/MacOS/DailyFixer" > /dev/null; then
-  echo "Closing DailyFixer…"
+  echo "Closing DailyFixer..."
   osascript -e "tell application id \"$BUNDLE_ID\" to quit" > /dev/null 2>&1 || true
   sleep 2
 fi
 mkdir -p "$DEST"
 rm -rf "$APP"
 mv "$tmp/x/DailyFixer.app" "$APP"
-echo "Installed DailyFixer $version in $DEST. Updates arrive inside the app (DailyFixer → Check for Updates…)."
+echo "Installed DailyFixer ${version} in ${DEST}. Updates arrive inside the app (DailyFixer > Check for Updates)."
 [ -n "${DAILYFIXER_NO_OPEN:-}" ] || open "$APP"
