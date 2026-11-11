@@ -43,11 +43,20 @@ Your data lives in `%APPDATA%\app.dailyfixer\DailyFixer`, not in the app folder,
 - **Using 0.3.1 on Windows?** Its *Update and restart* closed the app without updating. Install 0.3.2 once from the [Download page]({{ '/download/' | relative_url }}#install-on-windows) (unzip over the old folder); from then on updates work from inside the app.
 - **Didn't restart?** Start `dailyfixer.exe` again. Details of the last update are in `%TEMP%\dailyfixer-update.log`.
 
-## macOS and Linux
-DailyFixer tells you about new versions; **Open download page** takes you to the downloads. Installing from inside the app is not available there yet.
+## macOS
+DailyFixer tells you about new versions. To update, run the install line in Terminal again — from 0.4 the Updates screen has **Copy command** for it:
+
+```bash
+curl -fsSL https://sgmasters.github.io/dailyfixer-site/install.sh | bash
+```
+
+It replaces the app in your *Applications* folder; your data stays. **Open download page** also works (DMG). Details: [Mac & iPhone]({{ '/apple/' | relative_url }}#mac).
+
+## Linux
+DailyFixer tells you about new versions; **Open download page** takes you to the downloads.
 
 ## iOS
-No update check: iPhone builds will come through the App Store or TestFlight.
+No update check in the app: SideStore shows new versions under *My Apps → Updates* ([Mac & iPhone]({{ '/apple/' | relative_url }}#iphone-and-ipad)).
 
 ## Privacy
 The check is a plain request for one small file on this site (hosted by GitHub Pages); downloads come from GitHub Releases. No account, device id, app data or version number is sent. GitHub sees your IP address and the time, as for any visit to a website. See [Privacy]({{ '/privacy' | relative_url }}#update-check).

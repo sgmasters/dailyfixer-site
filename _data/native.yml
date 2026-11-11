@@ -1,5 +1,0 @@
-# Native app (native/ in the app repo): written by tools/release-mac.sh + release-ios.sh (native-mac.yml + native-ios.yml).
-version: "0.1.0"
-mac_zip: https://sgmasters.github.io/dailyfixer-site/native/files/0.1.0/DailyFixer-0.1.0-macos.zip
-mac_dmg: https://sgmasters.github.io/dailyfixer-site/native/files/0.1.0/DailyFixer-0.1.0-macos.dmg
-ios_ipa: https://sgmasters.github.io/dailyfixer-site/native/files/0.1.0/DailyFixer-0.1.0.ipa

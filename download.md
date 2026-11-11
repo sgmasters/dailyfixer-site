@@ -18,7 +18,7 @@ permalink: /download/
 {% if r.windows %}| [DailyFixer-{{ r.version }}-windows-x64.zip]({{ base }}/DailyFixer-{{ r.version }}-windows-x64.zip) | **Windows 10/11** (64-bit), portable |
 {% endif %}| [SHA256SUMS.txt]({{ base }}/SHA256SUMS.txt) | Checksums of the files above |
 
-**iPhone, iPad and Mac:** the native preview installs from this site — [DailyFixer for iPhone and Mac]({{ '/native/' | relative_url }}) (Mac: one line in Terminal; iPhone: SideStore).
+**Mac, iPhone and iPad:** DailyFixer {{ site.data.apple.version }} installs from this site — [Mac & iPhone]({{ '/apple/' | relative_url }}) (Mac: one line in Terminal; iPhone: SideStore).
 
 All versions: [GitHub Releases](https://github.com/{{ site.releases_repo }}/releases).
 {% if newest.version != r.version %}
@@ -45,6 +45,6 @@ All versions: [GitHub Releases](https://github.com/{{ site.releases_repo }}/rele
 ## Good to know
 - **Google sign-in** (Drive sync, Google Calendar) is in Google's testing mode until the app is verified: only invited testers can sign in for now. Everything else works without it.
 - **Exact reminder times:** on Android 14 and newer, also allow *Alarms & reminders* when the app asks.
-- **Other platforms:** Linux, macOS and iOS builds exist and are tested, but are not distributed yet. See the [platform overview]({{ '/guide/platforms/' | relative_url }}).
+- **Other platforms:** Mac and iPhone: [Mac & iPhone]({{ '/apple/' | relative_url }}). Linux builds exist and are tested, but are not distributed yet. See the [platform overview]({{ '/guide/platforms/' | relative_url }}).
 
 Next: [Getting started]({{ '/guide/getting-started/' | relative_url }}) · [Privacy policy]({{ '/privacy' | relative_url }})

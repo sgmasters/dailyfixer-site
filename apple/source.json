@@ -1,0 +1,42 @@
+{
+  "name": "DailyFixer",
+  "identifier": "app.dailyfixer.source",
+  "sourceURL": "https://sgmasters.github.io/dailyfixer-site/apple/source.json",
+  "subtitle": "Daily planner: tasks, reminders, goals, missions",
+  "website": "https://sgmasters.github.io/dailyfixer-site/apple/",
+  "tintColor": "#3F51B5",
+  "iconURL": "https://sgmasters.github.io/dailyfixer-site/assets/app_icon_128.png",
+  "apps": [
+    {
+      "name": "DailyFixer",
+      "bundleIdentifier": "app.dailyfixer.dailyfixer",
+      "developerName": "DailyFixer",
+      "subtitle": "Plan your day. Fix what matters.",
+      "localizedDescription": "Tasks with sub-tasks, reminders, quick add by text or voice, goals, missions and learning packs. Local-first, free, no ads.",
+      "iconURL": "https://sgmasters.github.io/dailyfixer-site/assets/app_icon_128.png",
+      "tintColor": "#3F51B5",
+      "category": "productivity",
+      "versions": [
+        {
+          "version": "0.3.2",
+          "buildVersion": "7",
+          "date": "2026-11-11",
+          "localizedDescription": "DailyFixer 0.3.2 for Mac and iPhone. Release notes: https://sgmasters.github.io/dailyfixer-site/releases/",
+          "downloadURL": "https://sgmasters.github.io/dailyfixer-site/apple/files/0.3.2/DailyFixer-0.3.2.ipa",
+          "size": 12228779,
+          "minOSVersion": "15.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSCalendarsFullAccessUsageDescription": "DailyFixer shows your calendar events next to your tasks and adds tasks or events to a calendar when you ask.",
+          "NSCalendarsUsageDescription": "DailyFixer shows your calendar events next to your tasks and adds tasks or events to a calendar when you ask.",
+          "NSMicrophoneUsageDescription": "DailyFixer uses the microphone to add tasks by voice.",
+          "NSSpeechRecognitionUsageDescription": "DailyFixer converts your speech to text to create tasks."
+        }
+      }
+    }
+  ],
+  "news": []
+}

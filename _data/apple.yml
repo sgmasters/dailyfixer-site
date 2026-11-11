@@ -1,0 +1,5 @@
+# Mac + iPhone builds (ADR-0020): written by app/tool/release_apple_site.sh (apple.yml).
+version: "0.3.2"
+mac_zip: https://sgmasters.github.io/dailyfixer-site/apple/files/0.3.2/DailyFixer-0.3.2-macos.zip
+mac_dmg: https://sgmasters.github.io/dailyfixer-site/apple/files/0.3.2/DailyFixer-0.3.2-macos.dmg
+ios_ipa: https://sgmasters.github.io/dailyfixer-site/apple/files/0.3.2/DailyFixer-0.3.2.ipa

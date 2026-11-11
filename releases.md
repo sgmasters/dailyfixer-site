@@ -11,6 +11,8 @@ New versions first. Downloads: [Download page]({{ '/download/' | relative_url }}
 
 Android APKs and the Windows zip. [Files for 0.3.2]({{ gh }}/v0.3.2)
 
+**11 November 2026: also for Mac, iPhone and iPad** — Mac with one line in Terminal, iPhone and iPad through SideStore: [Mac & iPhone]({{ '/apple/' | relative_url }}). Google sign-in (Drive sync, Google Calendar) isn't in these builds yet.
+
 **Fixed**
 - **Windows: Update and restart** closed DailyFixer without installing the update (0.3.1). The app now replaces its files and opens again.
 - If you use 0.3.1 on **Windows**, install 0.3.2 once from the [Download page]({{ '/download/' | relative_url }}) (unzip over the old folder). Later updates work from inside the app. On Android, 0.3.1 updates itself normally.

@@ -19,7 +19,7 @@ permalink: /
 - **Reminders that get through.** Notifications with Done and Snooze, Telegram messages through your own bot, and urgent alarm-style reminders.
 - **Goals and learning.** Turn a goal into scheduled steps; import or generate learning packs with quizzes and spaced repetition.
 - **AI is optional.** Off by default. Use the AI built into your phone, Ollama on your computer, or your own API key.
-- **Platforms.** Android today (signed APK). Windows, Linux, macOS and iOS builds exist and will follow.
+- **Platforms.** Android (signed APK), Windows (portable zip), Mac (one line in Terminal) and iPhone/iPad (SideStore). Linux builds exist and will follow.
 
 <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;margin:24px 0">
 {% for shot in site.static_files %}{% if shot.path contains '/assets/media/screenshots/' %}
