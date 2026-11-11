@@ -29,6 +29,8 @@ Press Enter (or Send) to add the task; the sheet closes and shows *Added "…" �
 
 **Russian** works the same way: `завтра в 17:00`, `в следующую пятницу`, `через 2 часа`, `3 ноября`, `напомни за 10 минут`, `срочно`, `каждый понедельник`, `по будням`, `на 30 минут`, `срочно напомни`, `разбуди`. Word endings, number words and ё/е are handled.
 
+**Bulgarian** too (0.4): `утре в 17:00`, `следващия петък`, `след 2 часа`, `3 ноември`, `напомни ми 10 минути преди`, `спешно`, `всеки понеделник`, `всеки делничен ден`, `за 30 минути`, `спешно напомни`, `събуди ме`.
+
 ## Commands
 Quick add also understands a few commands on existing tasks:
 - complete X
@@ -38,6 +40,7 @@ Quick add also understands a few commands on existing tasks:
 - remind me about X at 4pm
 
 Russian: выполни, перенеси … на пятницу, отложи … на 2 дня.
+Bulgarian: изпълни, премести … в петък, отложи … с 2 дни, преименувай … на ….
 
 **App commands** (since 0.2.2), English and Russian:
 

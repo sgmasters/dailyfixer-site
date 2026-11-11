@@ -21,7 +21,7 @@ DailyFixer explains each permission before Android asks. You can say no; the rel
 | Calendars | Settings → Calendars → connect | Showing your phone's calendars |
 
 ## Language
-Settings → **Language & voice**: app language (System, English, Русский) and the quick-add language. Quick add follows the app language unless you pick another.
+Settings → **Language & voice**: app language (System, English, Русский, Български) and the quick-add language. Quick add follows the app language unless you pick another.
 
 ## Optional connections
 All off until you turn them on in Settings:

@@ -5,6 +5,10 @@
 # files: false = notes are out but the APKs are not on this repo's Releases yet; the
 # Download page then offers the newest release that has files. Remove the line once
 # the release exists here.
+- version: 0.4.0
+  date: 2026-11-11
+  windows: true
+  summary: Bulgarian (whole app, quick add and voice), My server (your own Ollama or LM Studio over Tailscale), Mac updates inside the app, iPhone and phone export fixes.
 - version: 0.3.2
   date: 2026-11-10
   windows: true

@@ -7,6 +7,25 @@ New versions first. Downloads: [Download page]({{ '/download/' | relative_url }}
 
 {% capture gh %}https://github.com/{{ site.releases_repo }}/releases/tag{% endcapture %}
 
+## 0.4.0 · 11 November 2026 {#v040}
+
+Android APKs and the Windows zip. [Files for 0.4.0]({{ gh }}/v0.4.0) · Mac and iPhone: [Mac & iPhone]({{ '/apple/' | relative_url }}). On Android and Windows, 0.3.1 and later offer this update in Settings → About → Updates.
+
+**Added**
+- **Bulgarian.** The whole app in Bulgarian: Settings → Language & voice → App language → **Български** (or the phone's language). Quick add understands Bulgarian dates, times, repeats, reminders, durations and priorities ("обаждане на мама утре в 5 следобед напомни ми 10 минути преди", "всеки делничен ден"), and commands ("изпълни …", "отложи … с 2 дни"). Voice: Bulgarian speech recognition on phones, offline Whisper (use the Standard model) and cloud transcription. The wording is new: corrections are welcome.
+- **AI: My server.** Settings → AI → **My server** uses your own Ollama or LM Studio on your computer, also from your phone over Tailscale; requests go only to that address, never to a cloud provider. API key optional (kept on the device). Set-up and model advice (`qwen3:8b`): [Your own AI server]({{ '/guide/own-server/' | relative_url }}).
+- **Mac: updates inside the app.** Settings → About → Updates → **Download and install** downloads, checks the signature and installs when DailyFixer quits; or **Copy command** for Terminal.
+
+**Changed**
+- Ollama: thinking models (Qwen3) are asked not to think, so answers come faster.
+
+**Fixed**
+- Make a goal with small local models no longer adds copies of your tasks; Bulgarian task lists get Bulgarian milestone names (not Russian).
+- iPhone: Done and Snooze on a reminder work when DailyFixer is closed.
+- Undo after Make a goal goes back to your tasks instead of "Goal not found".
+- Phones: export opens the share sheet, so a backup can be saved outside the app (Files, Drive, mail).
+- Phones: the selection bar shows the number of selected tasks.
+
 ## 0.3.2 · 10 November 2026 {#v032}
 
 Android APKs and the Windows zip. [Files for 0.3.2]({{ gh }}/v0.3.2)
