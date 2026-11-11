@@ -18,6 +18,8 @@ permalink: /download/
 {% if r.windows %}| [DailyFixer-{{ r.version }}-windows-x64.zip]({{ base }}/DailyFixer-{{ r.version }}-windows-x64.zip) | **Windows 10/11** (64-bit), portable |
 {% endif %}| [SHA256SUMS.txt]({{ base }}/SHA256SUMS.txt) | Checksums of the files above |
 
+**iPhone, iPad and Mac:** the native preview installs from this site — [DailyFixer for iPhone and Mac]({{ '/native/' | relative_url }}) (Mac: one line in Terminal; iPhone: SideStore).
+
 All versions: [GitHub Releases](https://github.com/{{ site.releases_repo }}/releases).
 {% if newest.version != r.version %}
 **DailyFixer {{ newest.version }}** ([what's new]({{ '/releases/' | relative_url }}#v{{ newest.version | replace: '.', '' }})) is released; its downloads will appear here soon.

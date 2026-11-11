@@ -9,6 +9,7 @@ baseurl: /dailyfixer-site
 # Top navigation, in this order.
 header_pages:
   - download.md
+  - native/index.md
   - guide/index.md
   - releases.md
   - privacy.md
