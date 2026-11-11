@@ -38,6 +38,7 @@ All versions: [GitHub Releases](https://github.com/{{ site.releases_repo }}/rele
 ## Install on Windows
 1. Download the zip and unzip it anywhere (for example `Documents\DailyFixer`).
 2. Run `dailyfixer.exe`. The build is not code-signed yet, so Windows SmartScreen may say *Windows protected your PC*: choose **More info** → **Run anyway**.
+   If the very first start right after unzipping says *flutter_windows.dll was not found*, Windows was still unpacking or scanning the files: wait a few seconds and start it again.
 3. Optional: Settings → Desktop → tray icon and *Start with Windows*.
 
 **Updating:** from 0.3.1 on, Settings → About → Updates → *Download and install* does it for you. By hand: quit DailyFixer (also from the tray), unzip the new version over the old folder or into a new one. Your data is kept in `%APPDATA%\app.dailyfixer\DailyFixer`, not in the app folder. **Removing:** switch off *Start with Windows*, then delete the folder.
