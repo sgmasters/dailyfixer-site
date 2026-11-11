@@ -9,7 +9,7 @@ New versions first. Downloads: [Download page]({{ '/download/' | relative_url }}
 
 ## 0.4.0 · 11 November 2026 {#v040}
 
-Android APKs and the Windows zip. [Files for 0.4.0]({{ gh }}/v0.4.0) · Mac and iPhone: [Mac & iPhone]({{ '/apple/' | relative_url }}). On Android and Windows, 0.3.1 and later offer this update in Settings → About → Updates.
+Android APKs, the Windows zip, Mac (zip, DMG) and iPhone/iPad (.ipa). [Files for 0.4.0]({{ gh }}/v0.4.0) · Mac and iPhone: [Mac & iPhone]({{ '/apple/' | relative_url }}). On Android and Windows, 0.3.1 and later offer this update in Settings → About → Updates. Mac: from 0.4.0 updates install from inside the app (Settings → About → Updates → **Download and install**); from 0.3.2, run the install line in Terminal once more. Mac and iPhone builds now include Google sign-in (Drive sync, Google Calendar).
 
 **Added**
 - **Bulgarian.** The whole app in Bulgarian: Settings → Language & voice → App language → **Български** (or the phone's language). Quick add understands Bulgarian dates, times, repeats, reminders, durations and priorities ("обаждане на мама утре в 5 следобед напомни ми 10 минути преди", "всеки делничен ден"), and commands ("изпълни …", "отложи … с 2 дни"). Voice: Bulgarian speech recognition on phones, offline Whisper (use the Standard model) and cloud transcription. The wording is new: corrections are welcome.
