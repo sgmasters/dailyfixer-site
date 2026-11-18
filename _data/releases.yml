@@ -5,6 +5,10 @@
 # files: false = notes are out but the APKs are not on this repo's Releases yet; the
 # Download page then offers the newest release that has files. Remove the line once
 # the release exists here.
+- version: 0.5.0
+  date: 2026-11-18
+  windows: true
+  summary: Habit tracker (Yes/No or daily count, streaks with Skip, reminders, voice and quick add), one set of missions on all devices, missions in the app language, calendar commands with local AI.
 - version: 0.4.0
   date: 2026-11-11
   windows: true

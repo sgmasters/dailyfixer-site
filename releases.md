@@ -7,6 +7,21 @@ New versions first. Downloads: [Download page]({{ '/download/' | relative_url }}
 
 {% capture gh %}https://github.com/{{ site.releases_repo }}/releases/tag{% endcapture %}
 
+## 0.5.0 · 18 November 2026 {#v050}
+
+Android APKs and the Windows zip. [Files for 0.5.0]({{ gh }}/v0.5.0). On Android and Windows, 0.3.1 and later offer this update in Settings → About → Updates. Mac and iPhone stay on 0.4.0 for now.
+
+**Added**
+- **Habit tracker.** Missions → **Habits**: check in every day, on chosen weekdays or a few times a week, Yes/No ("Yoga") or a daily count ("8 glasses of water"). A missed day only restarts that habit's streak; **Skip** keeps it. Today shows the day's habits: tap to check in. Each habit has its streaks, 30-day rate and a 12-week history you can fix. Guide: [Habits]({{ '/guide/habits/' | relative_url }}).
+- Habits earn 5 XP per day reached, a daily mission "Check in N habits" and three badges.
+- Habit reminders at your time, as a notification (**Done**, **Snooze 1 h**, also on Windows) or in Telegram.
+- Quick add, voice and AI understand habits in English, Russian and Bulgarian: "did yoga", "drank 3 glasses of water", "new habit: read 20 min every weekday at 21:00".
+
+**Fixed**
+- Duplicate missions after sync between two devices (for example one in Russian, one in English): one set per period on all devices; finished missions keep their XP.
+- Missions show in the current app language; missions of a deleted goal are hidden.
+- Calendar commands with local AI (Ollama, My server) work with small models.
+
 ## 0.4.0 · 11 November 2026 {#v040}
 
 Android APKs, the Windows zip, Mac (zip, DMG) and iPhone/iPad (.ipa). [Files for 0.4.0]({{ gh }}/v0.4.0) · Mac and iPhone: [Mac & iPhone]({{ '/apple/' | relative_url }}). On Android and Windows, 0.3.1 and later offer this update in Settings → About → Updates. Mac: from 0.4.0 updates install from inside the app (Settings → About → Updates → **Download and install**); from 0.3.2, run the install line in Terminal once more. Mac and iPhone builds now include Google sign-in (Drive sync, Google Calendar).
