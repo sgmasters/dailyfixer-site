@@ -3,14 +3,14 @@
   <channel>
     <title>DailyFixer</title>
     <item>
-      <title>DailyFixer 0.4.0</title>
-      <pubDate>Wed, 11 Nov 2026 19:59:01 +0000</pubDate>
-      <sparkle:version>9</sparkle:version>
-      <sparkle:shortVersionString>0.4.0</sparkle:shortVersionString>
+      <title>DailyFixer 0.5.0</title>
+      <pubDate>Thu, 19 Nov 2026 14:42:58 +0000</pubDate>
+      <sparkle:version>10</sparkle:version>
+      <sparkle:shortVersionString>0.5.0</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
       <sparkle:releaseNotesLink>https://sgmasters.github.io/dailyfixer-site/releases/</sparkle:releaseNotesLink>
-      <description><![CDATA[<p>DailyFixer 0.4.0 for Mac and iPhone. Release notes: https://sgmasters.github.io/dailyfixer-site/releases/</p>]]></description>
-      <enclosure url="https://github.com/sgmasters/dailyfixer-site/releases/download/v0.4.0/DailyFixer-0.4.0-macos.zip" sparkle:edSignature="ILfwZYWjti0fWKGWDuaMGK1n/OP75A3pEUmU0YVOQPIkONdeHNcq+CcXFU+bHBMkLCx+e1P8h6kVMqipZ4R2AQ==" length="29058898" type="application/octet-stream"/>
+      <description><![CDATA[<p>DailyFixer 0.5.0 for Mac and iPhone. Release notes: https://sgmasters.github.io/dailyfixer-site/releases/</p>]]></description>
+      <enclosure url="https://github.com/sgmasters/dailyfixer-site/releases/download/v0.5.0/DailyFixer-0.5.0-macos.zip" sparkle:edSignature="ssZrv/m/79omwE1lhUJ/uNvyKUkmJYiSwJrSeXOAExDv6F12jJSBLJsxtyGk6JOiSbVHb/ByXjWo4j910bntCA==" length="29281629" type="application/octet-stream"/>
     </item>
   </channel>
 </rss>
