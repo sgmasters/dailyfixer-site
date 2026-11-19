@@ -9,7 +9,7 @@ New versions first. Downloads: [Download page]({{ '/download/' | relative_url }}
 
 ## 0.5.0 · 18 November 2026 {#v050}
 
-Android APKs and the Windows zip. [Files for 0.5.0]({{ gh }}/v0.5.0). On Android and Windows, 0.3.1 and later offer this update in Settings → About → Updates. Mac and iPhone stay on 0.4.0 for now.
+Android APKs, the Windows zip, Mac (zip, DMG) and iPhone/iPad (.ipa). [Files for 0.5.0]({{ gh }}/v0.5.0) · Mac and iPhone: [Mac & iPhone]({{ '/apple/' | relative_url }}). On Android and Windows, 0.3.1 and later offer this update in Settings → About → Updates; on Mac, 0.4.0 and later (**Download and install**); on iPhone, SideStore → Update.
 
 **Added**
 - **Habit tracker.** Missions → **Habits**: check in every day, on chosen weekdays or a few times a week, Yes/No ("Yoga") or a daily count ("8 glasses of water"). A missed day only restarts that habit's streak; **Skip** keeps it. Today shows the day's habits: tap to check in. Each habit has its streaks, 30-day rate and a 12-week history you can fix. Guide: [Habits]({{ '/guide/habits/' | relative_url }}).
