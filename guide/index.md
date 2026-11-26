@@ -18,6 +18,7 @@ How to use DailyFixer {{ site.data.releases.first.version }}. New here? Watch th
 | [Reminders]({{ '/guide/reminders/' | relative_url }}) | Notifications, Done/Snooze, urgent reminders |
 | [Telegram]({{ '/guide/telegram/' | relative_url }}) | Reminders through your own Telegram bot |
 | [Habits]({{ '/guide/habits/' | relative_url }}) | Habits with daily check-ins, streaks, Skip, reminders (from 0.5) |
+| [Food]({{ '/guide/food/' | relative_url }}) | Calories: photo or words, daily target, history and stats (from 0.6) |
 | [Goals & learning]({{ '/guide/goals-learning/' | relative_url }}) | Goals, learning packs, quizzes, creating with AI |
 | [Missions, XP & streaks]({{ '/guide/gamification/' | relative_url }}) | How XP, levels, streaks and missions work |
 | [Calendars & sync]({{ '/guide/calendars-sync/' | relative_url }}) | Calendar sources, encrypted sync between devices |

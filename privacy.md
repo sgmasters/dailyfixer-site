@@ -67,6 +67,7 @@ AI is off by default.
 - **Free tiers**: with a free Gemini key, Google may use your requests to improve its products, and people may review them. Some free OpenCode Zen models may also use requests for training. Don't use free tiers for private notes.
 - **Research mode** (Claude or OpenAI key only) sends the topic, level and number of lessons; the provider searches the web for it.
 - **My server** mode (version 0.4) sends the same request text only to the server address you enter, for example Ollama or LM Studio on your own computer, reached over your home network or Tailscale. Nobody else receives it, and DailyFixer never falls back to a cloud provider in this mode. An optional server API key stays in your device's secure storage. Tailscale's own privacy policy applies to its network; the requests travel encrypted between your devices.
+- **Food photos** (version 0.6): when you take or choose a photo to estimate calories, it is shrunk and sent once to the AI engine your mode uses (your own key's provider, your own server, or a local engine), then dropped. DailyFixer never stores the photo. Before the first photo goes to a cloud provider, the app names it. A food description you type or say is sent like any other request.
 
 ## Voice input
 You choose the voice engine per device (Settings → Language & voice):
@@ -149,6 +150,7 @@ DailyFixer — бесплатный планировщик дня без рек�
 - **Бесплатные тарифы**: с бесплатным ключом Gemini Google может использовать запросы для улучшения своих продуктов и просматривать их вручную. Некоторые бесплатные модели OpenCode Zen тоже могут обучаться на запросах. Не используйте бесплатные тарифы для личных заметок.
 - **Режим исследования** (только ключ Claude или OpenAI) отправляет тему, уровень и число уроков; провайдер ищет материалы в интернете.
 - Режим **«Мой сервер»** (версия 0.4) отправляет тот же текст запроса только по адресу сервера, который вы ввели, например Ollama или LM Studio на вашем компьютере, доступном через домашнюю сеть или Tailscale. Больше никто его не получает, и в этом режиме DailyFixer никогда не переключается на облачного провайдера. Необязательный ключ API сервера хранится в защищённом хранилище устройства. К сети Tailscale применяется её собственная политика конфиденциальности; между вашими устройствами запросы идут в зашифрованном виде.
+- **Фото еды** (версия 0.6): снимок, который вы делаете или выбираете для оценки калорий, уменьшается и один раз отправляется движку ИИ вашего режима (провайдеру вашего ключа, вашему серверу или локальному движку), затем удаляется. DailyFixer не хранит фото. Перед первым фото облачному провайдеру приложение называет его. Описание еды, которое вы вводите или произносите, отправляется как обычный запрос.
 
 ## Голосовой ввод
 Способ распознавания выбирается для каждого устройства (Настройки → Язык и голос):
