@@ -5,6 +5,10 @@
 # files: false = notes are out but the APKs are not on this repo's Releases yet; the
 # Download page then offers the newest release that has files. Remove the line once
 # the release exists here.
+- version: 0.6.0
+  date: 2026-11-26
+  windows: true
+  summary: Food tracker — calories on Today, photo or words estimated by your own AI, daily target with a calculator, history per day and 7 / 30-day stats.
 - version: 0.5.0
   date: 2026-11-18
   windows: true

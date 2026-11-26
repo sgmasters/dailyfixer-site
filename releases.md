@@ -7,6 +7,16 @@ New versions first. Downloads: [Download page]({{ '/download/' | relative_url }}
 
 {% capture gh %}https://github.com/{{ site.releases_repo }}/releases/tag{% endcapture %}
 
+## 0.6.0 · 26 November 2026 {#v060}
+
+Android APKs and the Windows zip. [Files for 0.6.0]({{ gh }}/v0.6.0). On Android and Windows, 0.3.1 and later offer this update in Settings → About → Updates. Mac and iPhone stay on 0.4.0 for now.
+
+**Added**
+- **Food tracker.** A **Food** card on Today: "1,240 of 2,000 kcal · 760 left", with protein / carbs / fat when known. Add food by **photo** (your AI lists what it sees with calories; check and **Save**), in words ("2 eggs and toast"), as "Oatmeal 350", or from a recent food in one tap. The **Food** screen shows each day by meal and **Stats** for 7 or 30 days. Guide: [Food]({{ '/guide/food/' | relative_url }}).
+- Settings → **Food**: daily calorie target (typed or from the calculator; only the result is saved), optional protein / carbs / fat targets; hide the card from Today.
+- Photos go only to the AI you chose in Settings → AI (your key for Gemini, OpenAI, Claude or Grok, or a vision model on your own server / Ollama) and are never stored. Estimates can be off — check portions before saving.
+- Quick add and voice: "burger 500 kcal", "съел борщ 300 ккал", "изядох баница 400 ккал"; with AI also "ate a burger".
+
 ## 0.5.0 · 18 November 2026 {#v050}
 
 Android APKs, the Windows zip, Mac (zip, DMG) and iPhone/iPad (.ipa). [Files for 0.5.0]({{ gh }}/v0.5.0) · Mac and iPhone: [Mac & iPhone]({{ '/apple/' | relative_url }}). On Android and Windows, 0.3.1 and later offer this update in Settings → About → Updates; on Mac, 0.4.0 and later (**Download and install**); on iPhone, SideStore → Update.
