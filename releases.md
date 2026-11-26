@@ -9,7 +9,7 @@ New versions first. Downloads: [Download page]({{ '/download/' | relative_url }}
 
 ## 0.6.0 · 26 November 2026 {#v060}
 
-Android APKs and the Windows zip. [Files for 0.6.0]({{ gh }}/v0.6.0). On Android and Windows, 0.3.1 and later offer this update in Settings → About → Updates. Mac and iPhone stay on 0.4.0 for now.
+Android APKs and the Windows zip. [Files for 0.6.0]({{ gh }}/v0.6.0). On Android and Windows, 0.3.1 and later offer this update in Settings → About → Updates. Mac and iPhone: 0.6.0 follows from the Mac build; until then they stay on 0.5.0.
 
 **Added**
 - **Food tracker.** A **Food** card on Today: "1,240 of 2,000 kcal · 760 left", with protein / carbs / fat when known. Add food by **photo** (your AI lists what it sees with calories; check and **Save**), in words ("2 eggs and toast"), as "Oatmeal 350", or from a recent food in one tap. The **Food** screen shows each day by meal and **Stats** for 7 or 30 days. Guide: [Food]({{ '/guide/food/' | relative_url }}).
