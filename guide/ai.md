@@ -35,7 +35,7 @@ In **Own key** mode, pick a provider and paste your key. It is stored only in yo
 | DeepSeek | since 0.2.1 | |
 | OpenCode Zen | since 0.2.1 | use a model it serves over its OpenAI-compatible API (DeepSeek, Kimi, GLM, Qwen, MiniMax, Mistral or a free model); free models may train on your requests |
 
-**Model**: type a model name for the provider, or leave it empty for the default (shown in the field). **Get a key** opens the provider's page for creating one. Research mode needs a Claude or OpenAI key.
+**Model**: type a model name for the provider, or leave it empty for the default (shown in the field). **Get a key** opens the provider's page for creating one. Lessons from a topic **with web search and sources** need a Claude or OpenAI key; with any other AI (including your own server) they are written without web search (0.6.1).
 
 **Why not my free ChatGPT / Gemini / DeepSeek chat account?** Those apps don't let other apps use your account. Tools that try it break the providers' terms, and accounts get blocked. A free Gemini API key or an on-device model is the free option.
 

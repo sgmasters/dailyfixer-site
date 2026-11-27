@@ -7,6 +7,17 @@ New versions first. Downloads: [Download page]({{ '/download/' | relative_url }}
 
 {% capture gh %}https://github.com/{{ site.releases_repo }}/releases/tag{% endcapture %}
 
+## 0.6.1 · 27 November 2026 {#v061}
+
+Android APKs and the Windows zip. [Files for 0.6.1]({{ gh }}/v0.6.1). On Android and Windows, 0.3.1 and later offer this update in Settings → About → Updates. Mac and iPhone stay on 0.5.0 until the next Mac build.
+
+**Changed**
+- Learn → Create with AI → **From a topic** (was *Research a topic*) works with [your own AI server]({{ '/guide/own-server/' | relative_url }}), the on-device model and every key: the AI writes the lessons from what the model knows, one at a time, without web search and without sources (the screen says so). With a Claude or OpenAI key it still searches the web and links sources.
+
+**Fixed**
+- AI-made lessons no longer fail when a small local model writes a longer answer than its multiple-choice option ("3-6 months of living expenses" vs "3-6 months"): the matching option is used, or the card becomes a plain question and answer.
+- With small local models, Bulgarian and Russian goal plans, lessons and quick-add titles came back in English; now they keep your language. Long goal plans no longer fail by listing every session. Model advice for your own server, Bulgarian included: [Which model]({{ '/guide/own-server/' | relative_url }}#which-model).
+
 ## 0.6.0 · 26 November 2026 {#v060}
 
 Android APKs and the Windows zip. [Files for 0.6.0]({{ gh }}/v0.6.0). On Android and Windows, 0.3.1 and later offer this update in Settings → About → Updates. Mac and iPhone: 0.6.0 follows from the Mac build; until then they stay on 0.5.0.

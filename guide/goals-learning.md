@@ -50,7 +50,9 @@ Every action shows *Undo*. You can also say or type these in quick add: "complet
 
 ### Create with AI (Learn tab)
 - **From notes**: type, paste or dictate notes; AI turns them into lessons and quiz cards. A pasted pack is used as it is. Works with any AI engine.
-- **Research a topic**: topic, level and 3–12 lessons. Needs your own Claude or OpenAI key: the AI searches the web and keeps source links. You see a cost estimate before and the usage after.
+- **From a topic** (called *Research a topic* before 0.6.1): topic, level and 3–12 lessons.
+  - With your own **Claude or OpenAI key** the AI searches the web and keeps source links. You see a cost estimate before and the usage after.
+  - With **any other AI** (since 0.6.1: [your own server]({{ '/guide/own-server/' | relative_url }}), the on-device model, a Gemini, Grok or DeepSeek key) it writes the lessons from what the model knows, one lesson at a time: no web search and no sources, so check important facts. With your own server, 5 lessons take about half a minute to a minute.
 
 Both show a preview; nothing is saved until you tap **Import**.
 

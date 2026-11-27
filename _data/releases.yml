@@ -5,6 +5,10 @@
 # files: false = notes are out but the APKs are not on this repo's Releases yet; the
 # Download page then offers the newest release that has files. Remove the line once
 # the release exists here.
+- version: 0.6.1
+  date: 2026-11-27
+  windows: true
+  summary: Lessons from a topic with your own AI server, the on-device model or any key (no web search needed); Bulgarian and Russian answers and long goal plans fixed with small local models.
 - version: 0.6.0
   date: 2026-11-26
   windows: true

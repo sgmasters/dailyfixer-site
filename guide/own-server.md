@@ -81,19 +81,21 @@ The phone gets answers only while the PC is on, awake and signed in.
 | Check from the phone | Settings → AI → My server → **Test** |
 
 ## Which model {#which-model}
-Measured on a PC with an 8 GB graphics card (RTX 3070 Ti) with DailyFixer's own AI tasks in English and Russian: organizing 20 tasks into a goal, planning a goal, a learning pack from notes, tidying up dictation. Three runs each, 2026-11-11.
+Measured on a PC with an 8 GB graphics card (RTX 3070 Ti) with DailyFixer's own AI tasks: sorting 20 tasks into a goal, planning a goal, lessons from notes and from a topic, quick add, tidying up dictation, food from words and photos. Three runs each; English and Russian 2026-11-11, Bulgarian and the newer models 2026-11-27 (version 0.6.1).
 
 | Model (Ollama name) | Download | Works for DailyFixer | Speed (warm) | Notes |
 |---|---|---|---|---|
-| **`qwen3:8b`** | 5.2 GB | goals, plans, learning packs and dictation in English and Russian | ~6 s, long Russian plans ~13 s | **best pick**: groups 20 tasks well, keeps your language |
-| `qwen2.5-coder:7b` | 4.7 GB | most tasks | ~5 s | long Russian goal plans fail |
-| `llama3.2` | 2.0 GB | simple English requests | ~1–2 s | fastest; weak on Russian and long lists |
-| `gemma3:4b` | 3.4 GB | English only | ~3 s | answers Russian notes and goals in English; sees images |
-| `qwen2.5vl:7b` | 6.0 GB | everything above in English and Russian, plus **food photos** | ~2–6 s, long Russian plans ~15 s | sees images; when grouping 20 tasks into a goal it leaves out a few (9 of 120 across runs, `qwen3:8b`: 1). Measured 2026-11-27 |
+| **`qwen3:8b`** | 5.2 GB | everything except photos, in English, Russian and Bulgarian | ~1–8 s, long plans ~11–17 s | **best for goals**: sorts 20 tasks into a goal and loses almost none (1 of 60) |
+| **`qwen2.5vl:7b`** | 6.0 GB | everything **including food photos**, in English, Russian and Bulgarian | ~1–8 s, long plans ~12–15 s | sees images; when sorting 20 tasks it leaves out a few (3 of 60) |
+| **`gemma3:4b`** | 3.4 GB | everything including photos, in English, Russian and Bulgarian | ~1–3 s, plans ~8 s | **smallest and fastest**, sees images; sorting leaves out a few more (6 of 60) and photo items are mislabeled more often |
+| `qwen2.5-coder:7b` | 4.7 GB | most tasks | ~5 s | long Russian goal plans fail (2026-11-11) |
+| `llama3.2` | 2.0 GB | simple English requests | ~1–2 s | weak on Russian and long lists (2026-11-11) |
+
+A task left out of the sorting stays in the goal as a loose task, so nothing is lost; you can move it yourself. Before 0.6.1 small models often answered Bulgarian and Russian goals and notes in English and gave up on long goal plans; 0.6.1 fixed both.
 
 Not tested yet: `qwen3:4b` (for smaller graphics cards) and `gemma3:12b` (fills 8 GB, slower). In LM Studio pick the same families (Qwen3 8B, Q4_K_M).
 
-**Our pick: `qwen3:8b`** (`ollama pull qwen3:8b`). With a smaller graphics card or less memory, try `llama3.2` for English. Quick add commands that the built-in rules already understand never wait for the AI.
+**Our pick:** `qwen2.5vl:7b` for one model that does everything including photos; `qwen3:8b` if you don't need photos and want the best goal sorting; `gemma3:4b` for a smaller graphics card (4–6 GB) or when speed matters more than the last few percent. Quick add commands that the built-in rules already understand never wait for the AI. Since 0.6.1 your server also writes **lessons from a topic** (Learn → Create with AI → From a topic), without web search: about 1 second for the outline and 3–10 seconds per lesson.
 
 Downloading a model takes several GB; bigger than your graphics memory means much slower answers.
 
@@ -102,12 +104,13 @@ My server uses **one model for everything**: the one chosen in Settings → AI �
 
 | You want | Choose as the model |
 |---|---|
-| Photos too | **`qwen2.5vl:7b`** (`ollama pull qwen2.5vl:7b`): photos, and all text tasks in English and Russian (table above) |
+| Photos too | **`qwen2.5vl:7b`** (`ollama pull qwen2.5vl:7b`): photos and all text tasks in English, Russian and Bulgarian (table above) |
+| Photos on a smaller graphics card | `gemma3:4b`: faster, but it mislabels more (it called toast "fried potato") |
 | Best goal organizing, no photos | `qwen3:8b`; log food in words ("2 eggs and toast") |
 
 You can download both and switch the model in Settings → AI whenever you like. LM Studio: load a vision model (for example *Qwen2.5-VL 7B*); DailyFixer can't check it in advance, so a text-only model answers photos with an error.
 
-A real plate (a full English breakfast) took about 8 seconds with `qwen2.5vl:7b`. Estimates vary between runs by up to a third, so check the portions before saving.
+A real plate (a full English breakfast, about 1,000–1,100 kcal by hand) took 4–8 seconds: `qwen2.5vl:7b` said 650–1,000 kcal on different days, `gemma3:4b` 850 kcal in 3 seconds. Estimates vary by up to a third, so check the portions before saving.
 
 ## Troubleshooting
 | You see | Do this |
