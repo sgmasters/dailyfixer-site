@@ -27,6 +27,10 @@ From version **0.4**, DailyFixer can use **your own AI server**: Ollama or LM St
    ```
    ollama pull qwen3:8b
    ```
+   For [food photos](#food-photos) you need a model that can see images:
+   ```
+   ollama pull qwen2.5vl:7b
+   ```
 3. **Let Ollama accept your `ts.net` name.** Ollama checks the name a request was sent to and refuses anything but `localhost` while it listens on this PC only, so requests through `tailscale serve` get *Ollama refused this address (HTTP 403)*. Set the environment variable `OLLAMA_HOST` to `0.0.0.0` and restart Ollama:
    - **Windows**: run `setx OLLAMA_HOST 0.0.0.0` in a terminal (or Settings → System → About → Advanced system settings → Environment Variables → New), then quit Ollama from the tray icon and start it again. If Windows asks whether to allow Ollama through the firewall, you can say **no**: `tailscale serve` reaches Ollama on the PC itself, so the firewall can stay closed.
    - **macOS**: `launchctl setenv OLLAMA_HOST 0.0.0.0`, then quit and reopen Ollama.
@@ -53,7 +57,7 @@ Other OpenAI-compatible servers (llama.cpp server, vLLM, Jan) work the same way 
 1. On the phone: Tailscale **on**.
 2. **Settings → AI → My server**.
 3. Pick the server type, enter the address, the API key if your server needs one, then **Connect**. The line below shows *Connected · N models*.
-4. Choose the **Model** and tap **Test**: *Server works · qwen3:8b · 1.4 s*.
+4. Choose the **Model** and tap **Test**: *Server works · qwen3:8b · 1.4 s*. This one model answers everything, food photos included (see [Food photos](#food-photos)).
 
 On the PC itself you can simply use `http://127.0.0.1:11434` (Ollama) or `http://127.0.0.1:1234` (LM Studio).
 
@@ -66,6 +70,16 @@ On the PC itself you can simply use `http://127.0.0.1:11434` (Ollama) or `http:/
 
 If the server can't be reached (PC asleep, Tailscale off), DailyFixer uses the AI on the device, then its built-in rules. It never switches to a cloud provider in this mode.
 
+## Keep the PC reachable {#keep-the-pc-reachable}
+The phone gets answers only while the PC is on, awake and signed in.
+
+| | |
+|---|---|
+| No sleep | Windows: Settings → System → Power → sleep when plugged in: **Never** (the screen may still turn off). macOS: System Settings → Energy (laptops: Displays → Advanced) → **Prevent automatic sleeping when the display is off** |
+| Signed in | On Windows and macOS, Ollama and LM Studio start when you sign in. After a restart (Windows updates restart at night) sign in once. A locked screen is fine |
+| Linux | Ollama runs as a system service and needs no sign-in; `sudo systemctl enable --now tailscaled ollama` |
+| Check from the phone | Settings → AI → My server → **Test** |
+
 ## Which model {#which-model}
 Measured on a PC with an 8 GB graphics card (RTX 3070 Ti) with DailyFixer's own AI tasks in English and Russian: organizing 20 tasks into a goal, planning a goal, a learning pack from notes, tidying up dictation. Three runs each, 2026-11-11.
 
@@ -74,7 +88,8 @@ Measured on a PC with an 8 GB graphics card (RTX 3070 Ti) with DailyFixer's own 
 | **`qwen3:8b`** | 5.2 GB | goals, plans, learning packs and dictation in English and Russian | ~6 s, long Russian plans ~13 s | **best pick**: groups 20 tasks well, keeps your language |
 | `qwen2.5-coder:7b` | 4.7 GB | most tasks | ~5 s | long Russian goal plans fail |
 | `llama3.2` | 2.0 GB | simple English requests | ~1–2 s | fastest; weak on Russian and long lists |
-| `gemma3:4b` | 3.4 GB | English only | ~3 s | answers Russian notes and goals in English |
+| `gemma3:4b` | 3.4 GB | English only | ~3 s | answers Russian notes and goals in English; sees images |
+| `qwen2.5vl:7b` | 6.0 GB | everything above in English and Russian, plus **food photos** | ~2–6 s, long Russian plans ~15 s | sees images; when grouping 20 tasks into a goal it leaves out a few (9 of 120 across runs, `qwen3:8b`: 1). Measured 2026-11-27 |
 
 Not tested yet: `qwen3:4b` (for smaller graphics cards) and `gemma3:12b` (fills 8 GB, slower). In LM Studio pick the same families (Qwen3 8B, Q4_K_M).
 
@@ -82,11 +97,25 @@ Not tested yet: `qwen3:4b` (for smaller graphics cards) and `gemma3:12b` (fills 
 
 Downloading a model takes several GB; bigger than your graphics memory means much slower answers.
 
+## Food photos {#food-photos}
+My server uses **one model for everything**: the one chosen in Settings → AI → My server. Food photos need that model to see images; with a text-only model such as `qwen3:8b` the camera says *Photos need AI*, and describing the food in words still works.
+
+| You want | Choose as the model |
+|---|---|
+| Photos too | **`qwen2.5vl:7b`** (`ollama pull qwen2.5vl:7b`): photos, and all text tasks in English and Russian (table above) |
+| Best goal organizing, no photos | `qwen3:8b`; log food in words ("2 eggs and toast") |
+
+You can download both and switch the model in Settings → AI whenever you like. LM Studio: load a vision model (for example *Qwen2.5-VL 7B*); DailyFixer can't check it in advance, so a text-only model answers photos with an error.
+
+A real plate (a full English breakfast) took about 8 seconds with `qwen2.5vl:7b`. Estimates vary between runs by up to a third, so check the portions before saving.
+
 ## Troubleshooting
 | You see | Do this |
 |---|---|
 | *Can't reach the server* | Tailscale on, on both devices? PC awake? Ollama / LM Studio running? On the PC, `tailscale serve status` should list your port. Check the port in the address. Direct `http://` addresses also need the PC's firewall to let Ollama in: use the `https://…ts.net` address from `tailscale serve` instead |
 | *Ollama refused this address (HTTP 403)* | Set `OLLAMA_HOST=0.0.0.0` and restart Ollama (step 2a.3) |
+| The camera says *Photos need AI* | The model chosen in Settings → AI → My server can't see images: choose `qwen2.5vl:7b` there, or describe the food in words ([Food photos](#food-photos)) |
+| Works at the PC, not from the phone after a while | The PC went to sleep or was restarted and nobody signed in ([Keep the PC reachable](#keep-the-pc-reachable)) |
 | *Phones allow http:// only to \*.ts.net names* | Use the `https://…ts.net` address from `tailscale serve`, or the `ts.net` name instead of the IP |
 | *The server rejected the API key* | LM Studio: copy the token again (server settings). Ollama needs no key: remove it |
 | *The server has no models* | `ollama pull qwen3:8b`, or download and load a model in LM Studio |

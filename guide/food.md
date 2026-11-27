@@ -26,7 +26,7 @@ Photos and estimates use the AI you set in Settings → AI ([Your own AI server]
 | AI mode | Photos |
 |---|---|
 | Own key | Claude, OpenAI, Gemini (free tier) or Grok; not DeepSeek or OpenCode Zen |
-| My server / Ollama | a vision model, for example `qwen2.5vl` or `gemma3` |
+| My server / Ollama | a model that can see images, for example `qwen2.5vl:7b`, chosen as the model in Settings → AI ([details]({{ '/guide/own-server/#food-photos' | relative_url }})) |
 | Off / On-device | describe in words or type kcal |
 
 The photo is shrunk, sent once to that engine and dropped; DailyFixer never stores it. Before the first photo to a cloud provider, the app tells you which one. Estimates can be off: check portions before saving.
